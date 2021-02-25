@@ -1,0 +1,16 @@
+<cu-custom bgColor="bg-gradual-green" isBack="{{false}}">
+  <view slot="content">投票</view>
+</cu-custom>
+
+<form action="#" bindsubmit="formsubmit">
+  <view class="title">
+    请选择你的投票对象
+    <radio-group bindchange="handleGroup" class="radgroup">
+      <radio class="rad" wx:for="{{list}}" value="{{item}}">
+        {{item}}</radio>
+    </radio-group>
+  </view>
+
+    <button size="mini" class="issue-btn" type="primary" form-type='submit' bindtap="handleChange">确定</button>
+
+</form>

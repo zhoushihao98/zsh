@@ -1,0 +1,36 @@
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}">
+  <view slot="content">评分</view>
+</cu-custom>
+
+<view class="padding text-center">
+  <view class="padding-xl radius shadow bg-blue margin-top">评分</view>
+</view>
+
+<view class='padding'>
+  <form bindsubmit='formSubmit' bindreset='formReset'>
+    <view class="cu-form-group margin-top">
+      <view class="title">宿舍号</view>
+    <input placeholder="请输入宿舍号" name='name' value=""></input>
+  </view>
+    <view 
+    class="cu-form-group margin-top"
+    wx:for="{{list}}"
+    >
+
+      <view class="title">{{item}}</view>
+      <input placeholder="请输入0~100的整数" name='{{item}}' value=""></input>
+    </view>
+
+   
+
+    <view class="flex margin-top-xl">
+
+      <button class="flex-sub padding margin-xs radius cu-btn bg-red btn" form-type='reset'>next</button>
+      <button class="flex-sub padding margin-xs radius cu-btn bg-green btn" form-type='submit'>确认</button>
+
+  
+    </view>
+
+  </form>
+
+</view>

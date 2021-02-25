@@ -1,0 +1,6 @@
+<cu-custom bgColor="bg-gradual-green" isBack="{{false}}">
+  <view slot="content"></view>
+</cu-custom>
+<view>
+  <view><image src="../../images/thank.jpg"></image></view>
+</view>

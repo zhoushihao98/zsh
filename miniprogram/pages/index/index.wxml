@@ -1,0 +1,16 @@
+<cu-custom bgColor="bg-gradual-pink" isBack='{{false}}'>
+  <view slot="content">首页</view>
+</cu-custom>
+<view class="content">
+  <image class="background" src="../../images/003.jpg" mode="aspectFill"></image>
+
+</view>
+
+ <view class='nav-list margin-top-xl indexs'>
+    <navigator open-type="navigate"  url="/pages/{{item.name}}/{{item.name}}" class="nav-li bg-{{item.color}}" wx:for="{{elements}}" wx:key>
+      <view class="nav-title margin">{{item.title}}</view>
+      <view class="nav-name margin">{{item.id}}</view>
+      <text class='cuIcon-{{item.icon}} margin'></text>
+    </navigator>
+  </view>
+ 

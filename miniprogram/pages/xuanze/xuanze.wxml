@@ -1,0 +1,22 @@
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}">
+  <view slot="content">评分</view>
+</cu-custom>
+
+<form bindsubmit='formsubmit'>
+<view class="title">请选择你需要的评分项目：
+
+<checkbox-group bindchange="checkboxchange">
+  <checkbox 
+  wx:for="{{list}}"
+value="{{item}}" 
+class="item">{{item}}</checkbox>
+</checkbox-group>
+</view>
+<view class="title">
+  <view>请输入你还需的评分项(以空格分开)：</view>
+
+  <input bindblur="inputchange4" type="text" />
+</view>
+<!-- button按钮 -->
+<button size="mini" class="issue-btn" type="primary" form-type='submit' bindtap="handleChange">确定</button>
+</form>

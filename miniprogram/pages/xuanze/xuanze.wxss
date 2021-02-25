@@ -1,0 +1,20 @@
+.title{
+  font-size: 36rpx;
+  padding: 20rpx;
+}
+.item{
+  height: 50rpx;
+  width: 100%;
+  padding: 35rpx 0rpx;
+  border-bottom: 3rpx solid black;
+}
+.title input{
+  margin-top: 15rpx;
+  height: 85rpx;
+  background-color: #fff;
+}
+button{
+  margin-left:75%;
+  margin-top: 25rpx;
+}
+

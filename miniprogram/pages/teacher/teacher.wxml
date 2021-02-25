@@ -1,0 +1,14 @@
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}">
+  <view slot="content">投票</view>
+</cu-custom>
+<form action="../xuanze/xuanze">
+  <view class="padding text-center">
+  <view class="padding-xl radius shadow bg-blue margin-top">投票</view>
+</view>
+<view class="title">
+  <view>请输入被选目标：</view>
+
+  <input bindblur="inputchange" type="text" />
+</view>
+  <button form-type="submit" bindtap="bindBut">确定</button>
+</form>

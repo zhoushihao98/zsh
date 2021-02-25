@@ -1,0 +1,13 @@
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}">
+  <view slot="content">评分</view>
+</cu-custom>
+<form action="../xuanze/xuanze">
+  <view class="padding text-center">
+  <view class="padding-xl radius shadow bg-blue margin-top">评分</view>
+</view>
+<view class="cu-form-group margin-top set">
+      <view class="title">项目名</view>
+    <input placeholder="请输入项目名字" name='name' value=""></input>
+  </view>
+  <button form-type="submit" bindtap="bindBut">确定</button>
+</form>

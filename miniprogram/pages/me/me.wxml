@@ -1,0 +1,66 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{false}}">
+  <view slot="content">个人中心</view>
+</cu-custom>
+  <view class="container">
+  <view class="userinfo" >
+<view class="flex solid-bottom padding align-center bg-white margin rounds" >
+  
+  
+
+    <button class=" cu-avatar round xl" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"></button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    
+    </block>
+ 
+  <!-- 头像框 -->
+  <view class="flex-right padding-bottom margin-top-xs">
+    <view class="margin-left-xl">
+      <text class="userinfo-nickname userinfo" >{{userInfo.nickName}}</text>
+    </view>
+
+    <!-- 文本框 -->
+  </view>
+  <view class='flex justify-end arrow-view'>
+    <view class="arrow"></view>
+  </view>
+  <!-- 箭头 -->
+ </view>
+
+</view>
+</view>
+<view class="cu-list menu card-menu margin-top-lg  radius">
+
+  <view class='cu-item'></view>
+
+
+  <view class='cu-item animation-slide-right' style="animation-delay: 0.5s;">
+    <view class='content margin-left-xl'>
+      <text class='cuIcon-formfill text-green'></text>
+      <text class='text-gray text-xl'>项目查询</text>
+      <text class='text-gray text-xl margin-left-lg'>{{order}}</text>
+    </view>
+  </view>
+
+  <view class='cu-item animation-slide-right' style="animation-delay: 0.5s;">
+    <view class='content margin-left-xl' >
+      <text class='cuIcon-phone text-blue'></text>
+      <text class='text-gray text-xl'>联系我们</text>
+      <text class='text-gray text-xl margin-left-lg'>{{order}}</text>
+    </view>
+  </view>
+
+  <view class='cu-item animation-slide-left' style="animation-delay: 0.5s;">
+    <view class='content margin-left-xl' bindtap="feedback">
+      <text class="cuIcon-writefill text-cyan"></text>
+      <text class='text-gray text-xl'>意见反馈</text>
+    </view>
+  </view>
+
+  
+
+ 
+
+  <view class='cu-item'></view>
+
+</view>
